@@ -5,6 +5,15 @@ class TaskManager extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return MaterialApp(
+      theme: ThemeData(
+        colorSchemeSeed: Colors.green,
+        textTheme: TextTheme(
+          titleLarge: TextStyle(fontSize: 28, fontWeight: FontWeight.w600),
+        ),
+      ),
+
+      // home: ,
+    );
   }
 }

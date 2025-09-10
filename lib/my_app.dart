@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:task_manager/UI/Screens/splash_screen.dart';
 
 class TaskManager extends StatelessWidget {
   const TaskManager({super.key});
@@ -32,7 +33,7 @@ class TaskManager extends StatelessWidget {
         ),
       ),
 
-      // home: ,
+      home: SplashScreen(),
     );
   }
 }

@@ -11,6 +11,14 @@ class TaskManager extends StatelessWidget {
         textTheme: TextTheme(
           titleLarge: TextStyle(fontSize: 28, fontWeight: FontWeight.w600),
         ),
+        inputDecorationTheme: InputDecorationTheme(
+          fillColor: Colors.white,
+          filled: true,
+          contentPadding: EdgeInsets.symmetric(horizontal: 16),
+          enabledBorder: OutlineInputBorder(borderSide: BorderSide.none),
+          errorBorder: OutlineInputBorder(borderSide: BorderSide.none),
+          border: OutlineInputBorder(borderSide: BorderSide.none),
+        ),
       ),
 
       // home: ,

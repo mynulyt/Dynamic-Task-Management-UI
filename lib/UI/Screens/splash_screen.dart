@@ -30,7 +30,7 @@ class _SplashScreenState extends State<SplashScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: BackgorundScreen(
-        child: Center(child: SvgPicture.asset(AssetPath.logoSvg, height: 40)),
+        child: Center(child: SvgPicture.asset(AssetPath.logoSvg, height: 60)),
       ),
     );
   }

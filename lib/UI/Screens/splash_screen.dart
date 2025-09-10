@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:task_manager/UI/Screens/login_screen.dart';
+import 'package:task_manager/UI/widgets/backgorund_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -15,14 +16,16 @@ class _SplashScreenState extends State<SplashScreen> {
     _moveToNextScreen();
   }
 
-  Future<void> _moveToNextScreen()async{
+  Future<void> _moveToNextScreen() async {
     await Future.delayed(Duration(seconds: 2));
-    Navigator.push(context, MaterialPageRoute(builder:(context)=>LoginScreen()));
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => LoginScreen()),
+    );
   }
+
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: ,
-    );
+    return Scaffold(body: BackgorundScreen());
   }
 }

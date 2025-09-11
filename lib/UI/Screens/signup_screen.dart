@@ -11,6 +11,11 @@ class SignupScreen extends StatefulWidget {
 
 class _SignupScreenState extends State<SignupScreen> {
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
+  final TextEditingController _emailController = TextEditingController();
+  final TextEditingController _fNameController = TextEditingController();
+  final TextEditingController _lNameController = TextEditingController();
+  final TextEditingController _mobileController = TextEditingController();
+  final TextEditingController _passwordController = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -29,21 +34,28 @@ class _SignupScreenState extends State<SignupScreen> {
                     style: Theme.of(context).textTheme.titleLarge,
                   ),
                   SizedBox(height: 24),
-                  TextFormField(decoration: InputDecoration(hintText: "Email")),
+                  TextFormField(
+                    controller: _emailController,
+                    decoration: InputDecoration(hintText: "Email"),
+                  ),
                   SizedBox(height: 8),
                   TextFormField(
+                    controller: _fNameController,
                     decoration: InputDecoration(hintText: "First name"),
                   ),
                   SizedBox(height: 8),
                   TextFormField(
+                    controller: _lNameController,
                     decoration: InputDecoration(hintText: "Last Name"),
                   ),
                   SizedBox(height: 8),
                   TextFormField(
+                    controller: _mobileController,
                     decoration: InputDecoration(hintText: "Mobile"),
                   ),
                   SizedBox(height: 8),
                   TextFormField(
+                    controller: _passwordController,
                     decoration: InputDecoration(hintText: "Password"),
                   ),
                   SizedBox(height: 35),
@@ -72,6 +84,12 @@ class _SignupScreenState extends State<SignupScreen> {
 
   @override
   void dispose() {
+    _emailController.dispose();
+    _lNameController.dispose();
+    _fNameController.dispose();
+    _mobileController.dispose();
+    _passwordController.dispose();
+
     super.dispose();
   }
 }

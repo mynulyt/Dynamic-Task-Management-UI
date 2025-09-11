@@ -9,9 +9,10 @@ class TmAppBar extends StatelessWidget {
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
       tileColor: Colors.white,
       title: Text("Title will be here"),
-      subtitle: Column(children: [
-          
-        ],
+      subtitle: Column(
+        spacing: 8,
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [],
       ),
     );
   }

@@ -9,6 +9,7 @@ class SignupScreen extends StatefulWidget {
 }
 
 class _SignupScreenState extends State<SignupScreen> {
+  final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -18,6 +19,7 @@ class _SignupScreenState extends State<SignupScreen> {
             padding: EdgeInsets.all(16),
             child: Form(
               child: Column(
+                key: _formKey,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [],
               ),

@@ -1,3 +1,4 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:task_manager/UI/widgets/backgorund_screen.dart';
 
@@ -45,7 +46,17 @@ class _SignupScreenState extends State<SignupScreen> {
                   TextFormField(
                     decoration: InputDecoration(hintText: "Password"),
                   ),
-                  SizedBox(height: 8),
+                  SizedBox(height: 35),
+                  Center(
+                    child: RichText(
+                      text: TextSpan(
+                        text: 'Login',
+                        style: TextStyle(color: Colors.green),
+                        recognizer: TapGestureRecognizer()
+                          ..onTap = _onTapLoginButton,
+                      ),
+                    ),
+                  ),
                 ],
               ),
             ),
@@ -53,5 +64,14 @@ class _SignupScreenState extends State<SignupScreen> {
         ),
       ),
     );
+  }
+
+  void _onTapLoginButton() {
+    Navigator.pop(context);
+  }
+
+  @override
+  void dispose() {
+    super.dispose();
   }
 }

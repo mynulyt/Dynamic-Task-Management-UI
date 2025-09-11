@@ -5,6 +5,15 @@ class TaskCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return ListTile(
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+      tileColor: Colors.white,
+      title: Text("Title will be here"),
+      subtitle: Column(
+        spacing: 8,
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [],
+      ),
+    );
   }
 }

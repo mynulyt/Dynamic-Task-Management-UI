@@ -24,6 +24,9 @@ class TmAppBar extends StatelessWidget {
           ),
         ],
       ),
+      actions: [IconButton(onPressed: () {}, icon: Icon(Icons.logout))],
     );
   }
+
+  Size get PreferredSize => Size.fromHeight(kToolbarHeight);
 }

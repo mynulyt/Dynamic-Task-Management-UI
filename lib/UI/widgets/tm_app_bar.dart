@@ -5,14 +5,24 @@ class TmAppBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListTile(
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
-      tileColor: Colors.white,
-      title: Text("Title will be here"),
-      subtitle: Column(
+    return AppBar(
+      backgroundColor: Colors.green,
+      title: Row(
         spacing: 8,
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [],
+        children: [
+          CircleAvatar(),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                "Full Name",
+                style: Theme.of(
+                  context,
+                ).textTheme.titleSmall?.copyWith(color: Colors.white),
+              ),
+            ],
+          ),
+        ],
       ),
     );
   }

@@ -21,7 +21,32 @@ class _SignupScreenState extends State<SignupScreen> {
               child: Column(
                 key: _formKey,
                 crossAxisAlignment: CrossAxisAlignment.start,
-                children: [],
+                children: [
+                  SizedBox(height: 82),
+                  Text(
+                    "Join with US",
+                    style: Theme.of(context).textTheme.titleLarge,
+                  ),
+                  SizedBox(height: 24),
+                  TextFormField(decoration: InputDecoration(hintText: "Email")),
+                  SizedBox(height: 8),
+                  TextFormField(
+                    decoration: InputDecoration(hintText: "First name"),
+                  ),
+                  SizedBox(height: 8),
+                  TextFormField(
+                    decoration: InputDecoration(hintText: "Last Name"),
+                  ),
+                  SizedBox(height: 8),
+                  TextFormField(
+                    decoration: InputDecoration(hintText: "Mobile"),
+                  ),
+                  SizedBox(height: 8),
+                  TextFormField(
+                    decoration: InputDecoration(hintText: "Password"),
+                  ),
+                  SizedBox(height: 8),
+                ],
               ),
             ),
           ),

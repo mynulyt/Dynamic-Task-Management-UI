@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:task_manager/UI/Screens/login_screen.dart';
 import 'package:task_manager/UI/Screens/signup_screen.dart';
 import 'package:task_manager/UI/Utils/asset_path.dart';
 import 'package:task_manager/UI/widgets/backgorund_screen.dart';

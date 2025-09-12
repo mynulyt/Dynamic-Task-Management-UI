@@ -10,7 +10,7 @@ class TaskCountByStatusCard extends StatelessWidget {
   });
 
   final String title;
-  final Int count;
+  final int count;
 
   @override
   Widget build(BuildContext context) {

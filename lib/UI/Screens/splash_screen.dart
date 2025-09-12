@@ -3,6 +3,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:task_manager/UI/Screens/signup_screen.dart';
 import 'package:task_manager/UI/Utils/asset_path.dart';
 import 'package:task_manager/UI/widgets/backgorund_screen.dart';
+import 'package:task_manager/ui/screens/login_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -22,7 +23,7 @@ class _SplashScreenState extends State<SplashScreen> {
     await Future.delayed(Duration(seconds: 2));
     Navigator.push(
       context,
-      MaterialPageRoute(builder: (context) => SignupScreen()),
+      MaterialPageRoute(builder: (context) => LoginScreen()),
     );
   }
 

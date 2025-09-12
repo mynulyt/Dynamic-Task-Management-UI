@@ -1,10 +1,9 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:pin_code_fields/pin_code_fields.dart';
+
+import 'package:task_manager/UI/Screens/reset_pass_.dart';
+import 'package:task_manager/UI/widgets/backgorund_screen.dart';
 import 'package:task_manager/ui/screens/login_screen.dart';
-import 'package:task_manager/ui/screens/reset_password_screen.dart';
-import 'package:task_manager/ui/screens/sign_up_screen.dart';
-import 'package:task_manager/ui/widgets/screen_background.dart';
 
 class ForgotPasswordVerifyOtpScreen extends StatefulWidget {
   const ForgotPasswordVerifyOtpScreen({super.key});
@@ -22,7 +21,7 @@ class _ForgotPasswordVerifyOtpScreenState
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: ScreenBackground(
+      body: BackgorundScreen(
         child: SingleChildScrollView(
           child: Padding(
             padding: const EdgeInsets.all(16),

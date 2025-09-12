@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:task_manager/UI/widgets/backgorund_screen.dart';
-import 'package:task_manager/ui/widgets/screen_background.dart';
-import 'package:task_manager/ui/widgets/tm_app_bar.dart';
+import 'package:task_manager/UI/widgets/tm_app_bar.dart';
 
 class AddNewTaskScreen extends StatefulWidget {
   const AddNewTaskScreen({super.key});

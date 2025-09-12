@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class TmAppBar extends StatelessWidget {
-  const TmAppBar({super.key});
+class TMAppBar extends StatelessWidget implements PreferredSizeWidget {
+  const TMAppBar({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -15,10 +15,16 @@ class TmAppBar extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "Full Name",
+                'Full name',
                 style: Theme.of(
                   context,
                 ).textTheme.titleSmall?.copyWith(color: Colors.white),
+              ),
+              Text(
+                'email@gmail.com',
+                style: Theme.of(
+                  context,
+                ).textTheme.bodySmall?.copyWith(color: Colors.white),
               ),
             ],
           ),
@@ -28,5 +34,6 @@ class TmAppBar extends StatelessWidget {
     );
   }
 
-  Size get PreferredSize => Size.fromHeight(kToolbarHeight);
+  @override
+  Size get preferredSize => Size.fromHeight(kToolbarHeight);
 }

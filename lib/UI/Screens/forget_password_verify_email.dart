@@ -1,5 +1,7 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:task_manager/UI/Screens/forget_password_verify_otp_screen.dart';
+import 'package:task_manager/UI/widgets/backgorund_screen.dart';
 
 class ForgotPasswordVerifyEmailScreen extends StatefulWidget {
   const ForgotPasswordVerifyEmailScreen({super.key});
@@ -17,7 +19,7 @@ class _ForgotPasswordVerifyEmailScreenState
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: ScreenBackground(
+      body: BackgorundScreen(
         child: SingleChildScrollView(
           child: Padding(
             padding: const EdgeInsets.all(16),
